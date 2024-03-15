@@ -1,7 +1,7 @@
 import s from './Button.module.css'
 import {ButtonProps} from "@/components/Button/Button.props";
 import cn from 'classnames';
-import {Arrow} from "@/public/assets/icons";
+import {Arrow} from "@/assets/icons";
 
 const Button = ({children, appearance, arrow='none',className, ...rest}: ButtonProps) => {
     return (
