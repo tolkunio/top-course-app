@@ -7,16 +7,17 @@ import Footer from "@/Layout/Footer/Footer";
 import {FunctionComponent} from "react";
 import {Component} from "react";
 import {JSX} from "react";
+import Main from "@/Layout/Main/Main";
 
 const Layout = ({children}: LayoutProps) => {
     return (
         <>
             <Header/>
-            <div>
+            <div className={s.content}>
                 <SideBar/>
-                <div>
+                <Main>
                     {children}
-                </div>
+                </Main>
             </div>
             <Footer/>
         </>

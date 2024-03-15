@@ -1,0 +1,20 @@
+.xs{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.s{
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+.m{
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+.l{
+    font-weight: 500;
+    font-size: 1.8px;
+    padding-bottom: 2rem;
+}

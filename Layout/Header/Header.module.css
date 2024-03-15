@@ -1,3 +1,29 @@
 .header{
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    color: var(--primary);
+    max-width: 120rem;
+    width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.flexWrapper{
+    display: flex;
+    flex-direction: row;
+    gap:0.8rem;
+}
+.title{
 
+}
+.main{
+
+    font-weight: bold;
+}
+.subMain{
+    font-size: 24px;
+    font-weight: lighter;
 }

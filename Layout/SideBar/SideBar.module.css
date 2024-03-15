@@ -1,0 +1,22 @@
+.sidebar{
+    padding-top: 8rem;
+    padding-left: 2rem;
+    max-width: 30rem;
+    width: 100%;
+    border: 1px solid blue;
+}
+.input{
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    padding-top: 3rem;
+}
+.icons{
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}

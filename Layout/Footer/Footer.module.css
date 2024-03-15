@@ -1,0 +1,23 @@
+.footer{
+    padding: 2.5rem 3rem;
+    line-height: 2.4rem;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+.span:hover{
+    color: var(--gray-light);
+}
+.flexWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftside{
+
+}
+.rightside{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+}
