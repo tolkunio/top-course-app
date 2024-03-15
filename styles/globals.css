@@ -24,6 +24,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans Mono', monospace;
+    font-size: 10px;
     color: var(--black);
     background-color: var(--background-color);
 

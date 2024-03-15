@@ -1,0 +1,14 @@
+.paragraph{
+    color: var(--black);
+    line-height: 2.4rem;
+}
+.small{
+    font-size: 1.4rem;
+}
+.medium{
+    font-size: 1.6rem;
+}
+.large{
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}

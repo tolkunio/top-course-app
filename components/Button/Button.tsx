@@ -1,7 +1,6 @@
 import s from './Button.module.css'
 import {ButtonProps} from "@/components/Button/Button.props";
 import cn from 'classnames';
-import arrowIcon from '../../public/assets/icons/components/arrow.svg';
 import {Arrow} from "@/public/assets/icons";
 
 const Button = ({children, appearance, arrow='none',className, ...rest}: ButtonProps) => {
