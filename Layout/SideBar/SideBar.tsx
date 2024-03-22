@@ -5,7 +5,7 @@ import Menu from "@/Layout/Menu/Menu";
 const SideBar = ({...rest}: SideBarProps) => {
     return (
         <aside className={s.sidebar} {...rest}>
-            <input  className={s.input} placeholder={'search'}/>
+            <input className={s.input} placeholder={'search'}/>
             <div className={s.content}>
                 <div className={s.icons}>
 

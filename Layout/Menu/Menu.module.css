@@ -1,5 +1,4 @@
 .menu {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -11,7 +10,9 @@
     align-items: center;
     font-weight: 500;
     font-size: 18px;
-    margin-top: 20px;
+}
+.firstLevel:last-child{
+    margin-bottom: 20px;
 }
 
 .firstLevelActive,
