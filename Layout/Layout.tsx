@@ -7,7 +7,9 @@ import Footer from "@/Layout/Footer/Footer";
 import {FunctionComponent} from "react";
 import {Component} from "react";
 import {JSX} from "react";
-import Main from "@/Layout/Main/Main";
+import {AppContextProvider} from "@/context/app.context";
+import {IContext} from "@/context/app.context";
+import {HomeProps} from "@/pages";
 
 const Layout = ({children}: LayoutProps) => {
     return (
@@ -15,21 +17,28 @@ const Layout = ({children}: LayoutProps) => {
             <Header/>
             <div className={s.content}>
                 <SideBar/>
-                <Main>
+                <main>
                     {children}
-                </Main>
+                </main>
             </div>
             <Footer/>
         </>
     );
 };
 
-export const withLayout=<T extends Record<string,unknown>>(Component:FunctionComponent<T>)  =>{
-    return function  withLayoutComponent(props:T):JSX.Element{
+export const withLayout = <T extends Record<string, unknown> & IContext>(Component: ({
+                                                                                         menu,
+                                                                                         fistCategory
+
+                                                                                     }: HomeProps) => React.JSX.Element) => {
+    return function withLayoutComponent(props: T): JSX.Element {
         return (
-            <Layout>
-                <Component {...process}/>
-            </Layout>
+            <AppContextProvider menu={props.menu} firstCategory={props.firstCategory}>
+                <Layout>
+                    <Component {...process}/>
+                </Layout>
+            </AppContextProvider>
+
         )
     }
 }
